@@ -9,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      white: "#FFFFFF", // Your existing primary color
+      sand: {
+        200: "#F4EFEB",
+      },
+      red: {
+        500: "#DD1E22",
+      },
+    },
   },
   plugins: [],
 };
