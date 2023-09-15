@@ -8,9 +8,14 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        1190: "1190px",
+      },
+    },
     colors: {
       white: "#FFFFFF", // Your existing primary color
+      black: "#000000",
       sand: {
         200: "#F4EFEB",
       },
