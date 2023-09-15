@@ -13,7 +13,7 @@
           <h4 class="text-lg font-bold text-red-500">{{ title }}</h4>
           <span class="ml-2 flex" v-if="hasVideo"
             ><button
-              class="m-auto w-6 h-6 rounded-lg bg-black text-white"
+              class="m-auto w-5 h-5 rounded-lg bg-black text-white"
             ></button
           ></span>
         </div>
