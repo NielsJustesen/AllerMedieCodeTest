@@ -12,6 +12,9 @@ module.exports = {
       width: {
         1190: "1190px",
       },
+      backgroundImage: theme => ({
+        'ad-image': "url('/src/images/ad.png')",
+       })
     },
     colors: {
       white: "#FFFFFF", // Your existing primary color

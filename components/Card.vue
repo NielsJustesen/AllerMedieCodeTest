@@ -10,7 +10,9 @@
     <div>
       <div class="flex flex-col">
         <div class="flex mx-auto pt-4">
-          <h4 class="text-lg font-bold text-red-500">{{ title }}</h4>
+          <h4 class="lg:text-base md:text-sm sm:text-xs font-bold text-red-500">
+            {{ title }}
+          </h4>
           <span class="ml-2 flex" v-if="hasVideo"
             ><button class="m-auto w-5 h-5 rounded-lg bg-black text-white">
               <img
@@ -19,7 +21,9 @@
               /></button
           ></span>
         </div>
-        <h5 class="text-center text-xl font-extrabold pb-4 pt-2 px-2">
+        <h5
+          class="lg:text-xl md:text-base sm:text-xs text-center font-extrabold pb-4 pt-2 px-2"
+        >
           {{ text }}
         </h5>
       </div>
