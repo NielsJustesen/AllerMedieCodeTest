@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["font-condensed", "font-oswald"],
+        condensed: ['CONDENSED', "sans-serif"],
+        oswald: ['OSWALD', "sans-serif"],
       },
       width: {
         1190: "1190px",
@@ -18,15 +19,13 @@ module.exports = {
       backgroundImage: {
         "ad-image": "url('/ad.png')",
       },
-    },
-    colors: {
-      white: "#FFFFFF",
-      black: "#000000",
-      sand: {
-        200: "#F4EFEB",
-      },
-      red: {
-        500: "#DD1E22",
+      colors: {
+        sand: {
+          200: "#F4EFEB",
+        },
+        red: {
+          500: "#DD1E22",
+        },
       },
     },
   },

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "CONDENSED";
+  src: url("./fonts/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OSWALD";
+  src: url("./fonts/Oswald-Regular.ttf");
+}

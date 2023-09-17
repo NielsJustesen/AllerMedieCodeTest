@@ -2,7 +2,7 @@
   <div
     class="md:w-5/6 md:ml-auto pt-6 md:m-0 mx-4 mt-6 bg-cover bg-ad-image text-white p-6 flex flex-col"
   >
-    <p class="w-4/5 leading-relaxed">
+    <p class="w-4/5 text-xs">
       En inspirerende verden af funktionelle designs og kvalitetsprodukter til
       alt inden for køkken, bolig og bord
     </p>
