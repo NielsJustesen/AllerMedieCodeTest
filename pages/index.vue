@@ -38,13 +38,17 @@ export default {
   },
   setup() {
     const store = useStore();
+
     const fetchCards = async () => {
       store.dispatch("fetchCards");
     };
+
+    fetchCards();
+
     const cards = computed(() => {
       return store.getters.getCards;
     });
-    fetchCards();
+
     return {
       cards,
     };

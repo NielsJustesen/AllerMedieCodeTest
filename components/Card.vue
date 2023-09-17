@@ -3,13 +3,16 @@
     <div>
       <img class="object-cover w-full" :src="imgSource" alt="billede" />
     </div>
-    <div class="flex flex-col pb-6">
+    <div class="flex flex-col pb-6 hover:cursor-pointer">
       <div class="flex mx-auto pt-4">
         <h4 class="lg:text-base md:text-xs font-extrabold text-red-500">
           {{ title }}
         </h4>
         <span class="ml-2 flex" v-if="hasVideo"
-          ><button class="m-auto w-5 h-5 rounded-lg bg-black text-white">
+          ><button
+            @click.prevent="openAndPlay()"
+            class="m-auto w-5 h-5 rounded-lg bg-black text-white"
+          >
             <img src="playButton.svg" alt="playbutton" /></button
         ></span>
       </div>
@@ -41,7 +44,11 @@ export default {
     },
   },
   setup(props) {
+    const openAndPlay = () => {
+      console.log("Open link and play video?");
+    };
     return {
+      openAndPlay,
       props,
     };
   },

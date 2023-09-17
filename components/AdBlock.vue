@@ -7,6 +7,7 @@
       alt inden for køkken, bolig og bord
     </p>
     <button
+      @click="adClicked()"
       class="bg-white text-black py-2 font-semibold mt-6 w-32 text-center"
     >
       SHOP HER
@@ -23,6 +24,14 @@
 <script>
 export default {
   name: "AdBlock",
+  setup() {
+    const adClicked = () => {
+      console.log("Ad was clicked");
+    };
+    return {
+      adClicked,
+    };
+  },
 };
 </script>
 
