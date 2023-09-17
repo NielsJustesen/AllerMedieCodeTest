@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["font-condensed", "font-oswald"],
+      },
       width: {
         1190: "1190px",
       },
