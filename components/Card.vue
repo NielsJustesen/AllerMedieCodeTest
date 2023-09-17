@@ -14,7 +14,7 @@
       </div>
       <div class="px-10">
         <h3
-          class="lg:text-2xl text-2xl text-center font-condensed font-bold text-32 leading-38 pt-2 px-2"
+          class="line-clamp-3 text-2xl text-center font-condensed font-bold text-32 leading-38 pt-2 px-2"
         >
           {{ text }}
         </h3>
