@@ -6,23 +6,13 @@
         <!-- Content section -->
         <section class="mx-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 gap-6">
           <Card
-            class="col-span-2"
-            :imgSource="'hund.png'"
-            :title="'EN LÆSER FORTÆLLER'"
-            :text="'Jeg higede efter omsorg - del 2:5'"
-            :hasVideo="true"
-          />
-          <Card
-            class="col-span-1"
-            :imgSource="'Dagmar.png'"
-            :title="'NÅR LIVET GØR ONDT'"
-            :text="'33-årige Dagmar har måske kun få måneder tilbage'"
-          />
-          <Card
-            class="col-span-1"
-            :imgSource="'StinneOgChristian.png'"
-            :title="'NÅR LIVET GØR ONDT'"
-            :text="'Stinne og Christian er uhelbredeligt syge med kræft'"
+            v-for="card in cards"
+            :class="card.id > 1 ? 'col-span-1' : 'col-span-2'"
+            :key="card.id"
+            :imgSource="card.img"
+            :title="card.title"
+            :text="card.text"
+            :hasVideo="card.hasVideo"
           />
         </section>
         <!-- Ad section -->
@@ -38,6 +28,7 @@
 import Header from "../components/Header.vue";
 import Card from "../components/Card.vue";
 import AdBlock from "../components/AdBlock.vue";
+import { useStore, computed } from "@nuxtjs/composition-api";
 export default {
   name: "IndexPage",
   components: {
@@ -45,11 +36,18 @@ export default {
     Card,
     AdBlock,
   },
-  async asyncData({ store }) {
-    await store.dispatch("fetchCards");
-  },
   setup() {
-    return {};
+    const store = useStore();
+    const fetchCards = async () => {
+      store.dispatch("fetchCards");
+    };
+    const cards = computed(() => {
+      return store.getters.getCards;
+    });
+    fetchCards();
+    return {
+      cards,
+    };
   },
 };
 </script>

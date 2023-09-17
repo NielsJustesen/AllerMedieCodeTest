@@ -9,7 +9,7 @@ export const getters = {
 };
 
 export const actions = {
-  async fetchCards(state) {
+  async fetchCards({ commit }) {
     //mimic api get request
     const cards = [
       {
@@ -34,7 +34,7 @@ export const actions = {
         hasVideo: false,
       },
     ];
-    state.commit("setCards", cards);
+    commit("setCards", cards);
     return cards;
   },
 };
@@ -42,6 +42,5 @@ export const actions = {
 export const mutations = {
   setCards(state, cards) {
     state.cards = cards;
-    console.log(state.cards);
   },
 };
