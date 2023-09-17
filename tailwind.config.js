@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        condensed: ['CONDENSED', "sans-serif"],
-        oswald: ['OSWALD', "sans-serif"],
+        condensed: ["Roboto Condensed", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
       },
       width: {
         1190: "1190px",

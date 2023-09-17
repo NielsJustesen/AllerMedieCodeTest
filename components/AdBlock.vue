@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:w-5/6 md:ml-auto pt-6 md:m-0 mx-4 mt-6 bg-cover bg-ad-image text-white p-6 flex flex-col"
+    class="lg:w-5/6 lg:ml-auto pt-6 md:m-0 mx-4 mt-6 bg-cover bg-ad-image text-white p-6 flex flex-col"
   >
     <p class="w-4/5 text-xs">
       En inspirerende verden af funktionelle designs og kvalitetsprodukter til
@@ -12,7 +12,7 @@
     >
       SHOP HER
     </button>
-    <div class="mt-16 ml-auto text-3xl">
+    <div class="mt-10 ml-auto text-2xl">
       <div class="w-28">
         <p class="text-right leading-6">Kitchen</p>
         <p class="leading-6">Living</p>
