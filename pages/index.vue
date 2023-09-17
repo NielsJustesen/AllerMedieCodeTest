@@ -1,10 +1,12 @@
 <template>
-  <div class="w-full flex justify-center bg-sand-200">
+  <div class="w-full flex justify-center bg-sand-200 pb-36">
     <div class="flex flex-col w-1190">
       <Header />
-      <div class="w-full md:flex pb-12">
+      <div class="w-full md:flex">
         <!-- Content section -->
-        <section class="mx-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 gap-6">
+        <section
+          class="mx-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 flex flex-col gap-6"
+        >
           <Card
             v-for="card in cards"
             :class="card.id > 1 ? 'col-span-1' : 'col-span-2'"

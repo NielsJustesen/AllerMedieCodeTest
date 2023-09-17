@@ -9,10 +9,7 @@
           {{ title }}
         </h4>
         <span class="ml-2 flex" v-if="hasVideo"
-          ><button
-            @click.prevent="openAndPlay()"
-            class="m-auto w-5 h-5 rounded-lg bg-black text-white"
-          >
+          ><button @click.prevent="openAndPlay()" class="m-auto w-5 h-5">
             <img src="playButton.svg" alt="playbutton" /></button
         ></span>
       </div>

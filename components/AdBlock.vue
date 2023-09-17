@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:w-5/6 md:ml-auto m-4 md:m-0 bg-cover bg-ad-image text-white p-6 flex flex-col"
+    class="md:w-5/6 md:ml-auto pt-6 md:m-0 mx-4 mt-6 bg-cover bg-ad-image text-white p-6 flex flex-col"
   >
     <p class="w-3/4 text-xs">
       En inspirerende verden af funktionelle designs og kvalitetsprodukter til
