@@ -13,7 +13,7 @@
         </button>
       </div>
       <div class="px-10 text-center text-32 leading-38 mt-2">
-        <h3 class="line-clamp-3 text-2xl font-bold font-condensed">
+        <h3 class="line-clamp-3 text-xl font-bold font-condensed">
           {{ text }}
         </h3>
       </div>

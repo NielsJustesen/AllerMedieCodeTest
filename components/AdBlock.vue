@@ -8,15 +8,15 @@
     </p>
     <button
       @click="adClicked()"
-      class="bg-white text-black py-2 font-semibold mt-6 w-32 text-center"
+      class="bg-white text-black py-2 px-4 uppercase text-xs font-semibold mt-4 w-fit text-center"
     >
-      SHOP HER
+      shop her
     </button>
     <div class="mt-10 ml-auto text-2xl">
-      <div class="w-28">
-        <p class="text-right leading-6">Kitchen</p>
-        <p class="leading-6">Living</p>
-        <p class="text-right leading-6">Dining</p>
+      <div class="w-24 flex flex-col">
+        <img class="cover ml-auto" src="Kitchen.svg" alt="Kitchen.svg" />
+        <img class="cover mr-auto" src="Living.svg" alt="Living.svg" />
+        <img class="cover ml-auto" src="Dining.svg" alt="Dining.svg" />
       </div>
     </div>
   </div>
@@ -36,6 +36,3 @@ export default {
 </script>
 
 <style></style>
-<!-- /
-C:\Users\niels\Projects\AllerMediaCodeTest\src\images\ad.png
-src\images\ad.png -->
