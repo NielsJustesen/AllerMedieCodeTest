@@ -1,12 +1,21 @@
 <template>
-  <div class="m-4 md:m-0 bg-cover bg-ad-image bg-black text-white p-6 flex flex-col">
-    <p>En inspirerende verden af funktionelle designs og kvalitetsprodukter til alt inden for køkken, bolig og bord</p>
-    <button class="bg-white text-black py-2 font-semibold mt-6 w-32 text-center">SHOP HER</button>
-    <div class="mt-10  ml-auto text-3xl ">
+  <div
+    class="md:w-5/6 md:ml-auto m-4 md:m-0 bg-cover bg-ad-image text-white p-6 flex flex-col"
+  >
+    <p class="w-3/4 text-xs">
+      En inspirerende verden af funktionelle designs og kvalitetsprodukter til
+      alt inden for køkken, bolig og bord
+    </p>
+    <button
+      class="bg-white text-black py-2 font-semibold mt-6 w-32 text-center"
+    >
+      SHOP HER
+    </button>
+    <div class="mt-16 ml-auto text-3xl">
       <div class="w-28">
-        <p class="text-right">Kitchen</p>
-        <p>Living</p>
-        <p class="text-right">Dining</p>
+        <p class="text-right leading-6">Kitchen</p>
+        <p class="leading-6">Living</p>
+        <p class="text-right leading-6">Dining</p>
       </div>
     </div>
   </div>
@@ -18,3 +27,6 @@ export default {
 </script>
 
 <style></style>
+<!-- /
+C:\Users\niels\Projects\AllerMediaCodeTest\src\images\ad.png
+src\images\ad.png -->

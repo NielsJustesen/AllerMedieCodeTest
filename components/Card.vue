@@ -1,32 +1,21 @@
 <template>
   <div class="bg-white rounded-b-lg w-full">
     <div>
-      <img
-        class="object-cover w-full"
-        :src="require('../src/images/' + imgSource + '')"
-        alt="billede"
-      />
+      <img class="object-cover w-full" :src="imgSource" alt="billede" />
     </div>
-    <div>
-      <div class="flex flex-col">
-        <div class="flex mx-auto pt-4">
-          <h4 class="lg:text-base md:text-sm sm:text-xs font-bold text-red-500">
-            {{ title }}
-          </h4>
-          <span class="ml-2 flex" v-if="hasVideo"
-            ><button class="m-auto w-5 h-5 rounded-lg bg-black text-white">
-              <img
-                src="../src/images/playButton.svg"
-                alt="playbutton"
-              /></button
-          ></span>
-        </div>
-        <h5
-          class="lg:text-xl md:text-base sm:text-xs text-center font-extrabold pb-4 pt-2 px-2"
-        >
-          {{ text }}
-        </h5>
+    <div class="flex flex-col pb-6">
+      <div class="flex mx-auto pt-4">
+        <h4 class="lg:text-base md:text-xs font-extrabold text-red-500">
+          {{ title }}
+        </h4>
+        <span class="ml-2 flex" v-if="hasVideo"
+          ><button class="m-auto w-5 h-5 rounded-lg bg-black text-white">
+            <img src="playButton.svg" alt="playbutton" /></button
+        ></span>
       </div>
+      <h5 class="lg:text-xl md:text-sm text-center font-extrabold pt-2 px-2">
+        {{ text }}
+      </h5>
     </div>
   </div>
 </template>

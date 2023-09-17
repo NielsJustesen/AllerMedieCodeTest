@@ -4,7 +4,7 @@
       <Header />
       <div class="w-full md:flex pb-12">
         <!-- Content section -->
-        <section class="mx-4 md:w-2/3 grid grid-cols-2 gap-6">
+        <section class="mx-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 gap-6">
           <Card
             class="col-span-2"
             :imgSource="'hund.png'"
@@ -13,13 +13,13 @@
             :hasVideo="true"
           />
           <Card
-            class="md:col-span-1 col-span-2"
+            class="col-span-1"
             :imgSource="'Dagmar.png'"
             :title="'NÅR LIVET GØR ONDT'"
             :text="'33-årige Dagmar har måske kun få måneder tilbage'"
           />
           <Card
-            class="md:col-span-1 col-span-2"
+            class="col-span-1"
             :imgSource="'StinneOgChristian.png'"
             :title="'NÅR LIVET GØR ONDT'"
             :text="'Stinne og Christian er uhelbredeligt syge med kræft'"
@@ -39,12 +39,15 @@ import Header from "../components/Header.vue";
 import Card from "../components/Card.vue";
 import AdBlock from "../components/AdBlock.vue";
 export default {
+  name: "IndexPage",
   components: {
     Header,
     Card,
     AdBlock,
   },
-  name: "IndexPage",
+  async asyncData({ store }) {
+    await store.dispatch("fetchCards");
+  },
   setup() {
     return {};
   },
