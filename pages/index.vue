@@ -5,7 +5,7 @@
       <div class="w-full md:flex">
         <!-- Content section -->
         <section
-          class="mx-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 flex flex-col gap-6"
+          class="ml-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 flex flex-col gap-5"
         >
           <Card
             v-for="card in cards"
@@ -15,6 +15,7 @@
             :title="card.title"
             :text="card.text"
             :hasVideo="card.hasVideo"
+            :isSmallCard="card.id > 1 ? true : false"
           />
         </section>
         <!-- Ad section -->

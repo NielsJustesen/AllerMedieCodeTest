@@ -1,8 +1,8 @@
 <template>
   <div
-    class="lg:w-5/6 lg:ml-auto pt-6 md:m-0 mx-4 mt-6 bg-cover bg-ad-image text-white p-6 flex flex-col"
+    class="lg:w-4/5 lg:ml-auto md:m-0 mx-4 mt-6 bg-cover bg-ad-image text-white p-5 flex flex-col"
   >
-    <p class="w-4/5 text-xs">
+    <p class="w-3/4 text-xs">
       En inspirerende verden af funktionelle designs og kvalitetsprodukter til
       alt inden for køkken, bolig og bord
     </p>
@@ -12,7 +12,7 @@
     >
       shop her
     </button>
-    <div class="mt-10 ml-auto text-2xl">
+    <div class="mt-14 ml-auto text-2xl">
       <div class="w-24 flex flex-col">
         <img class="cover ml-auto" src="Kitchen.svg" alt="Kitchen.svg" />
         <img class="cover mr-auto" src="Living.svg" alt="Living.svg" />

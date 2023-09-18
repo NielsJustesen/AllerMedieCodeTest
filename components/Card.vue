@@ -12,8 +12,11 @@
           <img src="playButton.svg" alt="playbutton" />
         </button>
       </div>
-      <div class="px-10 text-center text-32 leading-38 mt-2">
-        <h3 class="line-clamp-3 text-xl font-bold font-condensed">
+      <div class="px-5 text-center text-32 leading-38 mt-2">
+        <h3
+          class="line-clamp-3 font-black font-condensed"
+          :class="isSmallCard === true ? 'text-2xl' : 'text-xl'"
+        >
           {{ text }}
         </h3>
       </div>
@@ -38,6 +41,9 @@ export default {
       required: true,
     },
     hasVideo: {
+      type: Boolean,
+    },
+    isSmallCard: {
       type: Boolean,
     },
   },

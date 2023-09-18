@@ -17,7 +17,7 @@ module.exports = {
         1190: "1190px",
       },
       backgroundImage: {
-        "ad-image": "url('/ad2.png')",
+        "ad-image": "url('/ad.png')",
       },
       colors: {
         sand: {
