@@ -15,7 +15,7 @@
       <div class="px-5 text-center text-32 leading-38 mt-2">
         <h3
           class="line-clamp-3 font-black font-condensed"
-          :class="isSmallCard === true ? 'text-2xl' : 'text-xl'"
+          :class="isSmallCard === true ? 'text-2xl' : 'text-2xl lg:text-xl'"
         >
           {{ text }}
         </h3>

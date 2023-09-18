@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full flex justify-center bg-sand-200 pb-36">
+  <div class="w-full flex justify-center bg-sand-200 pb-5">
     <div class="flex flex-col w-1190">
       <Header />
-      <div class="w-full md:flex">
+      <div class="w-full lg:flex">
         <!-- Content section -->
         <section
-          class="ml-4 mt-4 md:w-2/3 md:grid md:grid-cols-2 flex flex-col gap-5"
+          class="ml-4 mt-4 lg:mr-0 mr-4 lg:w-2/3 lg:grid lg:grid-cols-2 flex flex-col gap-5"
         >
           <Card
             v-for="card in cards"
@@ -19,7 +19,7 @@
           />
         </section>
         <!-- Ad section -->
-        <section class="md:w-1/3 md:mr-4">
+        <section class="lg:w-1/3 lg:mr-4 lg:mx-0 mx-4">
           <AdBlock />
         </section>
       </div>
