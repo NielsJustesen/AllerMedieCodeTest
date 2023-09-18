@@ -23,6 +23,9 @@ module.exports = {
         sand: {
           200: "#F4EFEB",
         },
+        red: {
+          500: "#DD1E22",
+        },
       },
     },
   },
