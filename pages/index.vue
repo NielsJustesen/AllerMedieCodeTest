@@ -29,6 +29,7 @@
         >
           <Card
             class="col-span-2 mt-3"
+            :cardId="card[0].id"
             :imgSource="cards[0].img"
             :title="cards[0].title"
             :text="cards[0].text"
@@ -38,6 +39,7 @@
           <AdBlock class="col-span-1 h-64 lg:mr-4" />
           <Card
             class="'col-span-1'"
+            :cardId="card[1].id"
             :imgSource="cards[1].img"
             :title="cards[1].title"
             :text="cards[1].text"
@@ -46,6 +48,7 @@
           />
           <Card
             class="col-span-1'"
+            :cardId="card[2].id"
             :imgSource="cards[2].img"
             :title="cards[2].title"
             :text="cards[2].text"
