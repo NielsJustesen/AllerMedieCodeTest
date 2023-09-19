@@ -14,9 +14,9 @@
     </button>
     <div class="mt-14 ml-auto text-2xl">
       <div class="w-24 flex flex-col">
-        <img class="cover ml-auto" src="Kitchen.svg" alt="Kitchen.svg" />
-        <img class="cover mr-auto" src="Living.svg" alt="Living.svg" />
-        <img class="cover ml-auto" src="Dining.svg" alt="Dining.svg" />
+        <NuxtImg class="cover ml-auto" src="Kitchen.svg" alt="Kitchen.svg" />
+        <NuxtImg class="cover mr-auto" src="Living.svg" alt="Living.svg" />
+        <NuxtImg class="cover ml-auto" src="Dining.svg" alt="Dining.svg" />
       </div>
     </div>
   </div>

@@ -2,7 +2,12 @@
   <article class="bg-white rounded-b-lg w-full hover:cursor-pointer">
     <a :href="'http://localhost:3000/articles/' + cardId">
       <div>
-        <img class="object-cover w-full" :src="imgSource" alt="billede" />
+        <NuxtImg
+          class="object-cover w-full"
+          format="webp"
+          :src="imgSource"
+          alt="billede"
+        />
       </div>
       <div class="flex flex-col pb-5">
         <div class="flex mx-auto mt-4">

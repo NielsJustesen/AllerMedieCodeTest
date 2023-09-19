@@ -3,11 +3,11 @@
     <div class="flex flex-col w-1190 mx-auto">
       <Header />
       <div class="flex justify-center mx-4">
-        <div class="w-2/3">
+        <div class="lg:w-2/3">
           <Card
             v-if="article !== undefined"
             :cardId="article['id']"
-            :imgSource="'../' + article['img']"
+            :imgSource="article['img']"
             :title="article['title']"
             :text="article['text']"
             :hasVideo="false"
@@ -32,9 +32,8 @@ export default {
   setup() {
     const store = useStore();
     const route = useRoute();
-    store.dispatch("fetchCards").then(() => {
-      store.dispatch("fetchArticle", route.value.params.id);
-    });
+    store.dispatch("fetchCards");
+    store.dispatch("fetchArticle", route.value.params.id);
     const article = computed(() => {
       return store.getters.getArticle;
     });
