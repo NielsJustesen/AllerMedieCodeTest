@@ -8,6 +8,7 @@
         >
           <Card
             v-for="card in cards"
+            :cardId="card.id"
             :class="card.id > 1 ? 'col-span-1' : 'col-span-2'"
             :key="card.id"
             :imgSource="card.img"
