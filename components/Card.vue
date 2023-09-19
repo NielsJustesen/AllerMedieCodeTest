@@ -1,6 +1,6 @@
 <template>
   <article class="bg-white rounded-b-lg w-full hover:cursor-pointer">
-    <a :href="'http://localhost:3000/articles/' + cardId">
+    <NuxtLink :to="'/articles/' + cardId">
       <div>
         <NuxtImg
           class="object-cover w-full"
@@ -29,7 +29,7 @@
           </h3>
         </div>
       </div>
-    </a>
+    </NuxtLink>
   </article>
 </template>
 
