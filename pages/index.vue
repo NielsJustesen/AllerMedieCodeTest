@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex justify-center bg-sand-200 pb-28">
+  <div class="w-full flex justify-center bg-sand-200 pb-20">
     <div class="flex flex-col w-1190">
       <Header />
       <div class="w-full lg:flex">
