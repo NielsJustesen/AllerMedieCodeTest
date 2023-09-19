@@ -3,12 +3,12 @@
     <div>
       <img class="object-cover w-full" :src="imgSource" alt="billede" />
     </div>
-    <div class="flex flex-col pb-6">
+    <div class="flex flex-col pb-5">
       <div class="flex mx-auto mt-4">
-        <div class="font-medium uppercase font-oswald text-red-400">
+        <div class="font-extrabold text-sm uppercase font-oswald text-red-400">
           {{ title }}
         </div>
-        <button v-if="hasVideo" class="ml-2 flex m-auto w-5 h-5">
+        <button v-if="hasVideo" class="ml-2 flex m-auto w-4 h-4">
           <img src="playButton.svg" alt="playbutton" />
         </button>
       </div>
