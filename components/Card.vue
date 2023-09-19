@@ -5,7 +5,7 @@
     </div>
     <div class="flex flex-col pb-6">
       <div class="flex mx-auto mt-4">
-        <div class="font-medium uppercase font-oswald text-red-500">
+        <div class="font-medium uppercase font-oswald text-red-400">
           {{ title }}
         </div>
         <button v-if="hasVideo" class="ml-2 flex m-auto w-5 h-5">
